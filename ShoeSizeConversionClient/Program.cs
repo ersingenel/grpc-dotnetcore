@@ -13,7 +13,6 @@ namespace ShoeSizeConversionClient
             var httpClientHandler = new HttpClientHandler();
             httpClientHandler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
             var httpClient = new HttpClient(httpClientHandler);
-
             var channel = GrpcChannel.ForAddress("https://localhost:5001", new GrpcChannelOptions { HttpClient = httpClient });
             var client = new ShoeSizeConversion.ShoeSizeConversionClient(channel);
             var conversionRequest = new ConversionRequest { Size = 11.5, Gender = ConversionRequest.Types.Gender.Women };
