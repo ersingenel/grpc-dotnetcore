@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "ShoeSizeConversionService";
+
+package ShoeSizeConversion;
+
+service ShoeSizeConversion {
+  rpc ConvertShoeSize (ConversionRequest) returns (ConversionReply);
+}
+
+message ConversionRequest {
+  double size = 1;
+  enum Gender {
+    WOMEN = 0;
+    MEN = 1;  
+  }
+  Gender gender = 2;
+}
+
+message ConversionReply {
+  double size = 1;
+}
