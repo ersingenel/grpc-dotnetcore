@@ -25,9 +25,9 @@ namespace ShoeSizeConversionService
             { 9, 40 },
             { 9.5, 41 },
             { 10, 41.5 },
-            { 10.5f, 42 },
+            { 10.5, 42 },
             { 11, 43 },
-            { 11.5f, 43 },
+            { 11.5, 43 },
             { 12, 44 }
         };
         private static readonly Dictionary<double, double> menSizes = new Dictionary<double, double>()
