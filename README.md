@@ -1,6 +1,6 @@
 ﻿# gRPC on .NET Core
 
-This repository contains a simple gRPC service example on .Net Core that returns the US shoe size for an EU size.
+This repository contains a simple gRPC service example on .NET Core that returns the US shoe size for an EU size.
 
 ## To run the service and client applications:
 
